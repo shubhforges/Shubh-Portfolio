@@ -1,42 +1,75 @@
 import socket
 import os
-print("Network Info Tool v1.0")
-print("Made by Shubh Chaudhary")
+
+def clear():
+    os.system("cls")
+
+def pause():
+    input("\nPress Enter to return to menu...")
+
+print("======================")
+print("  NETWORK TOOL v1.5")
+print("      By Shubh")
+print("======================")
+
 while True:
-    print("\n=== Network Info Tool ===")
+    print("\n--- MENU ---")
     print("1. Show Hostname")
     print("2. Show Local IP")
-    print("3. Ping a Website")
-    print("4. Trace Route")
-    print("5. DNS Lookup")
-    print("6. Exit")
+    print("3. DNS Lookup")
+    print("4. Ping Website")
+    print("5. Traceroute")
+    print("6. Clear Screen")
+    print("7. Exit")
 
-    choice = input("Enter choice: ")
+    choice = input("\nEnter choice: ")
 
+    # 1. Hostname
     if choice == "1":
-        print("Hostname:", socket.gethostname())
+        print("\n[HOSTNAME]")
+        print(socket.gethostname())
+        pause()
 
+    # 2. Local IP
     elif choice == "2":
-        print("Local IP:", socket.gethostbyname(socket.gethostname()))
+        print("\n[LOCAL IP]")
+        print(socket.gethostbyname(socket.gethostname()))
+        pause()
 
+    # 3. DNS Lookup
     elif choice == "3":
+        try:
+            domain = input("Enter domain: ")
+            print("\n[DNS RESULT]")
+            print(socket.gethostbyname(domain))
+        except:
+            print("Invalid domain or no internet connection.")
+        pause()
+
+    # 4. Ping
+    elif choice == "4":
         website = input("Website to ping: ")
+        print("\n[PING RESULT]")
         os.system(f"ping {website}")
-        input("\nPress Enter to continue...")
-        
-    elif choice== "4":
-        trace = input("Web or IP to trace:")
-        os.system(f"tracert {trace}")
-        input("\nPress Enter to continue...")
+        pause()
 
+    # 5. Traceroute
     elif choice == "5":
-        domain = input("Enter domain: ")
-        print("IP Address:", socket.gethostbyname(domain))
-    
+        trace = input("Enter website or IP: ")
+        print("\n[TRACEROUTE]")
+        os.system(f"tracert {trace}")
+        pause()
 
+    # 6. Clear Screen
     elif choice == "6":
-        print("Goodbye!")
+        clear()
+
+    # 7. Exit
+    elif choice == "7":
+        print("\nShutting down Network Tool...")
         break
 
+    # Invalid input
     else:
-        print("Invalid option!")
+        print("Invalid choice. Try again.")
+        pause()
