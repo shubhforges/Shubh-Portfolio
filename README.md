@@ -32,6 +32,17 @@ A Python-based networking utility that performs basic network operations.
 
 👉 [View Project](./Projects/Network-Info-Tool/)
 
+
+### 🔐 Password Generator (CLI Tool)
+A Python-based password generator that creates secure passwords based on user preferences.
+
+**Features:**
+- Letters only / Numbers only / Strong passwords
+- Custom password length
+- Multiple password generation loop
+
+👉 [View Project](./Projects/Password-Generator/)
+
 ---
 
 ## 🎯 Current Goals
