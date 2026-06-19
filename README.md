@@ -1,26 +1,40 @@
 # Shubh
 
 ## About Me
+Student learning Python, Networking, Cybersecurity Fundamentals, and AI.  
+Currently focused on building small real-world projects to improve practical skills.
 
-Student learning Python, Networking, Cybersecurity Fundamentals, and AI.
+---
 
-## Certificates
+## 🧠 Skills (Learning)
+- Python (Beginner)
+- Networking Basics
+- Cybersecurity Fundamentals
+- AI Concepts
 
-* HP LIFE
+---
 
-## Projects
+## 📜 Certificates
+- HP LIFE
+
+---
+
+## 🚀 Projects
 
 ### Network Info Tool
+A Python-based networking utility that performs basic network operations.
 
-A Python utility that can:
+**Features:**
+- Display hostname
+- Display local IP address
+- Ping websites
+- Trace network routes
 
-* Display hostname
-* Display local IP address
-* Ping websites
-* Trace routes
+👉 [View Project](./Projects/Network-Info-Tool/)
 
-## Current Goals
+---
 
-* Build more Python projects
-* Learn networking and cybersecurity
-* Grow my GitHub portfolio
+## 🎯 Current Goals
+- Build more Python projects
+- Improve networking and cybersecurity knowledge
+- Develop a strong GitHub portfolio
